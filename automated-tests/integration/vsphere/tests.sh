@@ -39,7 +39,7 @@ fi
     info
     project_dir="./automated-tests/integration/vsphere/cluster"
     test(){
-        if [ -e ${project_dir}/provision/roles/boundary/target/tasks/main.yml ] && [ -e ${project_dir}/provision/ansible.cfg ] && [ -e ${project_dir}/bin/terraform ] && [ -e ${project_dir}/configuration/.netrc ] && [ -e ${project_dir}/logs/terraform.logs ] && [ -e ${project_dir}/.gitignore ] && [ -e ${project_dir}/.gitattributes ] && [ -e ${project_dir}/backend.tf ]
+        if [ -e ${project_dir}/provision/ansible.cfg ] && [ -e ${project_dir}/bin/terraform ] && [ -e ${project_dir}/configuration/.netrc ] && [ -e ${project_dir}/logs/terraform.logs ] && [ -e ${project_dir}/.gitignore ] && [ -e ${project_dir}/.gitattributes ] && [ -e ${project_dir}/backend.tf ]
         then
             echo "  All files exist, directory intact" >&3
             return 0
